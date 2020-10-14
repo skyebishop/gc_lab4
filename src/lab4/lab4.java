@@ -21,13 +21,22 @@ public class lab4 {
 			System.out.printf("-----------------------\n");
 
 			for (i = 1; i <= userNumber; i++) {
-				System.out.printf("%-7d %-8d %-7d\n", i, i * i, i * i * i);
+				System.out.printf("%-7d %-8d %-7d\n", i, i * i, i * i * i);				
 			}
-			System.out.println("Would you like to continue (y/n)?");
-			userDecision = scnr.next();
+			
+			System.out.printf("-----------------------\n");
+			System.out.printf("Number " + " x2 " + "   x3 " + "   x4\n");
+			System.out.printf("-----------------------\n");
+			
+			for (i = 1; i <= userNumber; i++) {
+				System.out.printf("%-7d %-5d %-5d %-5d\n", i * 1, i * 2, i * 3, i * 4);
+			}
+			System.out.println("Would you like to continue? (y/n)");
+			userDecision = scnr.next();			
 		} while (userDecision.equals("y"));
 		System.out.println("Goodbye!");
-
 	}
 
 }
+
+	
