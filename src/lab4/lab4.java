@@ -21,7 +21,7 @@ public class lab4 {
 			System.out.printf("-----------------------\n");
 
 			for (i = 1; i <= userNumber; i++) {
-				System.out.printf("%-8d %-9d %-7d\n", i, i*i, i*i*i);
+				System.out.printf("%-7d %-8d %-7d\n", i, i * i, i * i * i);
 			}
 			System.out.println("Would you like to continue (y/n)?");
 			userDecision = scnr.next();
