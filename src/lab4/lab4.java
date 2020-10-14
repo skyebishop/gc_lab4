@@ -16,12 +16,12 @@ public class lab4 {
 		do {
 			System.out.println("Enter a number:");
 			userNumber = scnr.nextInt();
-			System.out.printf("-------------------------\n");
-			System.out.printf("Squared " + " Cubed\n");
-			System.out.printf("-------------------------\n");
+			System.out.printf("-----------------------\n");
+			System.out.printf("Number " + " Squared " + " Cubed\n");
+			System.out.printf("-----------------------\n");
 
 			for (i = 1; i <= userNumber; i++) {
-				System.out.println(i + " " + (i * i) + " " +(i * i * i));
+				System.out.printf("%-8d %-9d %-7d\n", i, i*i, i*i*i);
 			}
 			System.out.println("Would you like to continue (y/n)?");
 			userDecision = scnr.next();
